@@ -62,7 +62,7 @@ class GetFromTikTok
     }
 
     /**
-     * Finction for gets data from TikTok
+     * Finction for gets data from web
      */
     private function wget(string $url): string
     {
