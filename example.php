@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 /**
  * Include script with class implementation
  */
