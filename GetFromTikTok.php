@@ -55,8 +55,7 @@ class GetFromTikTok
 
         if (!preg_match(
             '/<script id="SIGI_STATE" type="application\/json">(.*?)<\/script>/',
-            $html,
-            $json)) {
+            $html, $json)) {
             $this->set_error(4, 'JSON not found in the page');
             return false;
         }
@@ -77,9 +76,6 @@ class GetFromTikTok
         }
 
         $video = $this->wget($url_video);
-        if (false === $video) {
-            return false;
-        }
 
         return $video;
     }
@@ -113,7 +109,6 @@ class GetFromTikTok
         $data = curl_exec($curl);
         if(false === $data) {
             $this->set_error(3, 'CURL Error data transfer from ' . $url);
-            return false;
         }
 
         curl_close($curl);
