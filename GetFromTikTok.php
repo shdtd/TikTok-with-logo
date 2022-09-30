@@ -55,7 +55,8 @@ class GetFromTikTok
 
         if (!preg_match(
             '/<script id="SIGI_STATE" type="application\/json">(.*?)<\/script>/',
-            $html, $json)) {
+            $html, $json))
+        {
             $this->set_error(4, 'JSON not found in the page');
             return false;
         }
