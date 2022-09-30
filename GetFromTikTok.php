@@ -70,7 +70,7 @@ class GetFromTikTok
         try {
             $id = $params->ItemList->video->list[0];
             $this->format = $params->ItemModule->$id->video->format;
-            $url_video = $params->ItemModule->$id->video->downloadAddr;
+            $url_video = $params->ItemModule->$id->video->playAddr;
         } catch (Exception $e) {
             $this->set_error(6, $e->getMessage());
             return false;
