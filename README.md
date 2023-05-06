@@ -1,1 +1,1 @@
-Class for downloading video from TikTok with logo.
+Class for downloading video from TikTok with logo
