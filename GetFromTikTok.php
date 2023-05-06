@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 /** 
  * This class gets video from TikTok with logo.
- * Author: >>> Phenix <<<
+ * Author: >>> SHDTD <<<
  * Date: 29.09.2022
  */
 class GetFromTikTok
